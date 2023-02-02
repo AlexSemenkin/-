@@ -1,9 +1,15 @@
-﻿/*Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
-Пример:
-4 -> да
--3 -> нет
-7 -> нет*/
-Console.WriteLine("Введите число");
-int x = int.Parse(Console.ReadLine()!);
-if (x % 2 == 0) Console.WriteLine($"Число {x} четное");
-else Console.WriteLine($"Число {x} нечетное");
+﻿// Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+Console.Clear();
+
+Console.Write("Введите первое число: ");
+int a = int.Parse(Console.ReadLine()!);
+Console.Write("Введите второе число: ");
+int b = int.Parse(Console.ReadLine()!);
+
+int max = a;
+int min = a;
+
+if(b > max) max = b;
+if(b < min) min = b;
+
+Console.Write($"max = {max} min = {min}");
